@@ -32,15 +32,19 @@ Vue.createApp({
                 svolto: false,
             }
             ],
-            /*contatore : 5,
-            message:"Hai " + contatore + " cose da fare", */ 
+            contatore : 5,
+            message: "Hai " + this.contatore + " cose da fare" , 
+            
             newToDO:{
                 id:"",
                 text: "",
                 svolto: false,
-            }
+            },
+            funzione:function(){},
     }},
-    
-
-
+    method:{
+        function(){
+        console.log(contatore)
+    }
+}
 }).mount("#app");
