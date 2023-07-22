@@ -4,5 +4,17 @@
     box-sizing: border-box;
 
     min-height: 20px;
-    border: 1px dashed red;
+    /*border: 1px dashed red;*/
+}
+
+ul{
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.row{
+    margin: 0;
+}
+.col-10{
+    cursor: pointer;
 }

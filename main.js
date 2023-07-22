@@ -42,9 +42,27 @@ Vue.createApp({
             },
             funzione:function(){},
     }},
-    method:{
+
+
+    methods:{
+
         function(){
         console.log(contatore)
-    }
+        },
+
+        barra(liElement) {
+            if (liElement.svolto === true) {
+            liElement.svolto = false;
+            }
+             else {
+            liElement.svolto = true;
+            }
+        },
+
+        removeTask(i) {
+
+        this.toDo.splice(i, 1)
+        
+        },
 }
 }).mount("#app");
